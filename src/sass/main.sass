@@ -1,0 +1,120 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css")
+
+body
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif
+    word-break: keep-all
+
+.section
+    width: 100%
+    padding: clamp(20px,5vw,50px)
+
+.section-container
+    max-width: 768px
+    margin: auto
+
+    p
+        text-align: start
+
+.section-header,
+.section-title
+    display: block
+
+.section-header
+    font-weight: 700
+    font-size: 2rem
+
+.section-title
+    font-weight: 500
+    font-size: 1.5rem
+
+.hero
+    width: 100vw
+    height: 100vh
+    max-width: 100%
+    max-height: 100%
+
+    position: relative
+
+    background-size: cover
+    background-color: rgba(0,0,0,0.75)
+    background-blend-mode: multiply
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.hero-image
+    width: 100%
+    height: 100%
+    object-fit: cover
+    background-color: rgba(0,0,0,1)
+
+.hero-text
+    color: white
+    max-width: 768px
+    padding: clamp(20px,5vw,50px)
+    text-align: center
+    margin: auto
+
+.hero-header
+    font-weight: 700
+
+.section-video
+    width: 100%
+
+.section-image
+    width: 100%
+    height: 100%
+    padding-block: clamp(20px,5vw,50px)
+
+.menu-container
+    width: 100%
+    height: 100%
+    display: grid
+    grid-template-rows: repeat(3,1fr)
+    @include media-breakpoint-up(md)
+        grid-template-columns: repeat(3,1fr)
+        grid-template-rows: none
+    max-width: 1280px
+    margin: auto
+    padding: clamp(20px,5vw,50px)
+
+.menu-item
+    background-size: cover
+    border-radius: 100%
+    background-size: 100% auto
+    background-position: center
+    background-color: rgba(0,0,0,0.5)
+    @include media-breakpoint-up(xl)
+        background-color: rgba(0,0,0,0.9)
+
+    background-blend-mode: multiply
+    position: relative
+    margin: clamp(20px,5vw,50px)
+
+    transition: all ease 0.5s
+    &:hover
+        background-size: 125% auto
+        background-color: rgba(0,0,0,0.5)
+
+.menu-link
+    text-decoration: none
+    color: white
+    transition: all ease 0.5s
+    &:hover
+        color: white
+
+.menu-text
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    font-size: 1.5rem
+    font-weight: 700
+    text-align: center
+    word-break: keep-all
+
+p
+    font-size: 1.125rem
+    line-height: 2

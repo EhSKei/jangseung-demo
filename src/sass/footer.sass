@@ -1,0 +1,98 @@
+.footer
+    width: 100%
+
+    .swiper
+        width: 100%
+    .swiper-slide
+        width: fit-content
+        transition: all ease 0.5s
+        
+
+    .swiper-slide-active
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.5))
+        .footer-item-main
+            height: 0%
+            transition: height ease 0.5s,
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after
+        width: 50px
+        height: 50px
+        border-radius: 1000px
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.5))
+        
+
+    a
+        text-decoration: none
+        color: black
+    hr
+        margin-block: 10px
+
+.footer-item-container
+    width: 300px
+    height: 450px
+    background: white
+    position: relative
+    
+
+.footer-item-main-title,
+.footer-item-main-subtitle,
+.footer-item-sub-title,
+.footer-item-sub-subtitle,
+.footer-subitem-title,
+.footer-subitem-subtitle
+    display: block
+
+
+.footer-item-main
+    position: absolute
+    overflow: hidden
+    width: 100%
+    height: 100%
+    transition: height ease 0.5s
+
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+
+    background-size: cover
+    background-color: rgba(0,0,0,0.5)
+    background-blend-mode: multiply
+    background-position: bottom
+
+.footer-item-sub
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+
+.footer-item-main-container,
+.footer-item-sub-container
+    padding: 20px
+    position: relative
+
+.footer-item-main-container
+    a
+        color: white
+    hr
+        color: white
+        opacity: 1
+
+.footer-item-sub-container
+    hr
+        color: black
+        opacity: 1
+
+
+.footer-item-main-title,
+.footer-item-sub-title
+    font-weight: 700
+    font-size: 2rem
+
+.footer-item-main-subtitle,
+.footer-item-sub-subtitle
+    font-weight: 500
+    font-size: 1rem
+
